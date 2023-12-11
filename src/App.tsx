@@ -1,5 +1,5 @@
 import 'react-native-gesture-handler';
-import { Routes } from '@routes/RouteContext';
+import { Routes } from './routes/RouteContext';
 import { ThemeProvider } from 'styled-components/native';
 import { theme } from '@themes/theme';
 import { SafeAreaView } from 'react-native-safe-area-context';
