@@ -16,7 +16,6 @@ module.exports = function(api) {
             '@components': './src/components',
             
             /** ROUTES */
-            '@routes': './src/routes',
             '@navigate': './src/routes/RootNavigationParams',
             '@params-list': './src/routes/NavigationScreenParamsList',
             
