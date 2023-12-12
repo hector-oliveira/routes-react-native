@@ -1,6 +1,5 @@
 import * as React from 'react';
 import * as screens from '@auth/SignIn/SignIn';
-import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { AuthScreenParamsList } from '@params-list/AuthScreenParamsList';
 import { AppDrawerRoutes } from '../app/appDrawer.routes';
