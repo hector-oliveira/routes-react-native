@@ -15,6 +15,9 @@ export function AppDrawerRoutes() {
       title: '',
       headerTintColor: theme.colors.light,
       headerTransparent: true,
+      drawerStyle: { backgroundColor: theme.colors.primary_800 },
+      drawerActiveTintColor: theme.colors.light,
+      drawerInactiveTintColor: theme.colors.light_200,
     }}>
       <Drawer.Screen
         name='inicio'

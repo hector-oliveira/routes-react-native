@@ -4,6 +4,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { AppScreenParamsList } from '@params-list/AppScreenParamsList';
 import { Feather } from '@expo/vector-icons';
 import { useRenderIcon } from '@hooks/useRenderIcon';
+import { theme } from '@themes/theme';
 
 const Tab = createBottomTabNavigator<AppScreenParamsList>();
 
@@ -13,22 +14,36 @@ export function AppTabRoutes() {
   return (
     <Tab.Navigator 
       initialRouteName='home'
-      screenOptions={{ headerShown: false }}
+      screenOptions={{
+        headerShown: false,
+        tabBarStyle: { 
+          backgroundColor: theme.colors.primary_800,
+          paddingTop: 10,
+          paddingBottom: 10,
+          borderTopWidth: 0,
+          height: 60
+        },
+        tabBarActiveTintColor: theme.colors.active,
+        tabBarInactiveTintColor: theme.colors.inactive,
+      }}
     >
       <Tab.Screen
         name='home'
         component={screens.Home}
-        options={{ tabBarIcon: ({ size, color }) => icon({ name: 'home', size, color }) }}
+        options={{ 
+          tabBarIcon: ({ size, color }) => icon({ name: 'home', size, color }),
+          tabBarLabel: 'Início'
+        }}
       />
 
       <Tab.Screen
         name='notification'
         component={screens.Notification}
-        options={{ tabBarIcon: ({ size, color }) => icon({ name: 'bell', size, color }) }}
+        options={{
+          tabBarIcon: ({ size, color }) => icon({ name: 'bell', size, color }),
+          tabBarLabel: 'Notificações',
+        }}
       />
-
-      
-
     </Tab.Navigator>
   );
 }
