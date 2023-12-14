@@ -7,7 +7,7 @@ const Stack = createNativeStackNavigator<AppScreenParamsList>();
 
 export function AppStackRoutes() {
   return(
-    <Stack.Navigator >
+    <Stack.Navigator screenOptions={{ headerShown: false }}>
       <Stack.Screen name='feed' component={screens.Feed}/>
       <Stack.Screen name='profile' component={screens.Profile}/>
     </Stack.Navigator>

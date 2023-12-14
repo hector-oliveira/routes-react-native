@@ -11,7 +11,6 @@ export function AuthStackRoutes() {
     <Stack.Navigator initialRouteName='signIn' screenOptions={ { headerShown: false } } >
       <Stack.Screen name='signIn' component={screens.SignIn} />
       <Stack.Screen name='app' component={AppDrawerRoutes} />
-      
     </Stack.Navigator>
   );
 }
