@@ -6,9 +6,10 @@ export const Container = styled.View`
   width: 100%;
   justify-content: center;
   align-items: center;
+  background-color: ${ theme.colors.primary };
 `;
 
 export const Text = styled.Text`
-  font-size: 24px;
-  color: #000;
+  font-size: ${ theme.fontSize.xl };
+  color: ${ theme.colors.light };
 `;
