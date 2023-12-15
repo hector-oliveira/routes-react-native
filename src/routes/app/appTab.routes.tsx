@@ -16,6 +16,10 @@ export function AppTabRoutes() {
       initialRouteName='home'
       screenOptions={{
         headerShown: false,
+        tabBarActiveTintColor: theme.colors.active,
+        tabBarInactiveTintColor: theme.colors.inactive,
+        tabBarHideOnKeyboard: true,
+
         tabBarStyle: { 
           backgroundColor: theme.colors.primary_800,
           paddingTop: 10,
@@ -23,8 +27,11 @@ export function AppTabRoutes() {
           borderTopWidth: 0,
           height: 60
         },
-        tabBarActiveTintColor: theme.colors.active,
-        tabBarInactiveTintColor: theme.colors.inactive,
+        
+        tabBarVisibilityAnimationConfig: {
+          hide: { animation: 'timing', config: { duration: 0 } },
+          show: { animation: 'timing', config: { duration: 1 } },
+        },
       }}
     >
       <Tab.Screen
