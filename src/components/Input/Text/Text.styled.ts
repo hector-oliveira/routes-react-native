@@ -2,13 +2,17 @@ import { theme } from '@themes/theme';
 import styled from 'styled-components/native';
 
 export const Container = styled.View`
-  flex: 1;
-  width: 100%;
+  flex-direction: row;
+  height: 50px;
+  width: 90%;
   justify-content: center;
   align-items: center;
 `;
 
-export const Text = styled.Text`
-  font-size: 24px;
-  color: #000;
+export const IconContainer = styled.SafeAreaView`
+  height: 100%;
+  width: 40px;
+  margin-right: 3px;
+  justify-content: center;
+  align-items: center;
 `;
