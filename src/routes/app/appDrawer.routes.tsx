@@ -13,9 +13,15 @@ export function AppDrawerRoutes() {
   return (
     <Drawer.Navigator screenOptions={{ 
       title: '',
+      headerStyle: { 
+        backgroundColor: theme.colors.primary,
+        borderBottomWidth: 0,
+        elevation: 0,
+        shadowColor: 'transparent',
+      },
       headerTintColor: theme.colors.light,
-      headerTransparent: true,
-      drawerStyle: { backgroundColor: theme.colors.primary_800 },
+      drawerStyle: { 
+        backgroundColor: theme.colors.primary_800 },
       drawerActiveTintColor: theme.colors.light,
       drawerInactiveTintColor: theme.colors.light_200,
     }}>

@@ -12,4 +12,5 @@ export const Container = styled.View`
 export const Text = styled.Text`
   font-size: ${ theme.fontSize.xl };
   color: ${ theme.colors.light };
+  text-align: center;
 `;
