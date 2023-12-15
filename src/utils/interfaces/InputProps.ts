@@ -1,6 +1,6 @@
-import { TouchableOpacityProps } from 'react-native';
+import { TextInputProps } from 'react-native';
 
-export type InputProps = TouchableOpacityProps & {
+export type InputProps = TextInputProps & {
   placeholder?: string;
   secureTextEntry?: boolean;
 };
