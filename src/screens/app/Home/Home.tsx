@@ -6,8 +6,8 @@ export const Home = () => {
   return (
     <S.Container>
       <S.Text>Criando Inputs {'\n'} com Composition</S.Text>
-      <Input.Text placeholder='Nome'/>
-      
+      <Input.Text placeholder='Nome' />
+      <Input.Password placeholder='Senha'/>
     </S.Container>
   );
 };
