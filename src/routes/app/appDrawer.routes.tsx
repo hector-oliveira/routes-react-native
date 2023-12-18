@@ -11,26 +11,31 @@ const Drawer = createDrawerNavigator();
 export function AppDrawerRoutes() {
   const { icon } = useRenderIcon();
   return (
-    <Drawer.Navigator screenOptions={{ 
-      title: '',
-      headerStyle: { 
-        backgroundColor: theme.colors.primary,
-        borderBottomWidth: 0,
-        elevation: 0,
-        shadowColor: 'transparent',
-      },
-      headerTintColor: theme.colors.light,
-      drawerStyle: { 
-        backgroundColor: theme.colors.primary_800 },
-      drawerActiveTintColor: theme.colors.light,
-      drawerInactiveTintColor: theme.colors.light_200,
-    }}>
+    <Drawer.Navigator
+      screenOptions={{ 
+        title: '',
+        headerShown: false,
+        headerTintColor: theme.colors.light,
+        drawerActiveTintColor: theme.colors.light,
+        drawerInactiveTintColor: theme.colors.light_200,
+        
+        headerStyle: { 
+          backgroundColor: theme.colors.primary,
+          borderBottomWidth: 0,
+          elevation: 0,
+          shadowColor: 'transparent',
+        },
+        
+        drawerStyle: { backgroundColor: theme.colors.primary_800 },
+      }}
+    >
       <Drawer.Screen
         name='inicio'
         component={AppTabRoutes}
         options={{
           drawerIcon: ({ size, color }) => icon({ name: 'home', size, color }),
-          drawerLabel: 'Início'
+          drawerLabel: 'Início',
+          headerShown: true,
         }}
       />
       
