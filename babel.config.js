@@ -27,6 +27,7 @@ module.exports = function(api) {
             '@data': './src/utils/data',
             '@hooks': './src/utils/hooks',
             '@interfaces': './src/utils/interfaces',
+            '@layouts': './src/utils/layouts',
             '@themes': './src/utils/themes',
           
           }
