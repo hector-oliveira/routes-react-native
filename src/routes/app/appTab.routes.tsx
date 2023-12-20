@@ -2,14 +2,14 @@ import * as React from 'react';
 import * as screens from '@app/app-screens';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { AppScreenParamsList } from '@params-list/AppScreenParamsList';
-import { Feather } from '@expo/vector-icons';
-import { useRenderIcon } from '@hooks/useRenderIcon';
 import { theme } from '@themes/theme';
+import { renderIcon } from '@layouts/renderIcon';
 
 const Tab = createBottomTabNavigator<AppScreenParamsList>();
 
 export function AppTabRoutes() {
-  const { icon } = useRenderIcon();
+  
+	const { icon } = renderIcon();
   
   return (
     <Tab.Navigator 

@@ -4,13 +4,15 @@ import { AppStackRoutes } from './appStack.routes';
 import { AppTabRoutes } from './appTab.routes';
 import { Feather } from '@expo/vector-icons';
 import { theme } from '@themes/theme';
-import { useRenderIcon } from '@hooks/useRenderIcon';
+import { renderIcon } from '@layouts/renderIcon';
 
 const Drawer = createDrawerNavigator();
 
 export function AppDrawerRoutes() {
-  const { icon } = useRenderIcon();
-  return (
+  
+	const { icon } = renderIcon();
+  
+	return (
     <Drawer.Navigator
       screenOptions={{ 
         title: '',
