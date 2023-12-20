@@ -1,6 +1,6 @@
 import React from 'react';
 import * as S from './IconContainer.styled';
-import { ParentContainerProps } from '@interfaces/ParentContainer';
+import { ParentContainerProps } from '@interfaces/parentContainer.interface';
 
 export const IconContainer = ({ children }: ParentContainerProps) => {
   return (

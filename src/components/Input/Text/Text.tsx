@@ -1,5 +1,5 @@
 import React from 'react';
-import { InputProps } from '@interfaces/InputProps';
+import { InputProps } from '@interfaces/input.interface';
 import { theme } from '@themes/theme';
 import { useRenderIcon } from '@hooks/useRenderIcon';
 import { InputContent } from '../@Content/index';

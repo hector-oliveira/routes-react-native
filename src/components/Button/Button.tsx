@@ -1,6 +1,6 @@
 import React from 'react';
 import * as S from './Button.styled';
-import { ButtonProps } from '@interfaces/ButtonProps';
+import { ButtonProps } from '@interfaces/button.interface';
 
 export const Button = ({
   title,

@@ -4,7 +4,7 @@ import { InputContent } from '../@Content';
 import { usePassword } from './hook/usePassword';
 import { useRenderIcon } from '@hooks/useRenderIcon';
 import { theme } from '@themes/theme';
-import { InputProps } from '@interfaces/InputProps';
+import { InputProps } from '@interfaces/input.interface';
 
 export const Password = ({ placeholder, ...rest }: InputProps) => {
   const { icon } = useRenderIcon();
