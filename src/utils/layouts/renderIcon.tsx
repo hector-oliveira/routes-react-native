@@ -1,4 +1,4 @@
-import { IconProps } from "@interfaces/icon.interface"
+import { IconProps } from "@interfaces/Icon.interface"
 import { Feather } from '@expo/vector-icons';
 
 export const renderIcon = () => {

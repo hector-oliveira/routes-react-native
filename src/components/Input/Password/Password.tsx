@@ -2,7 +2,7 @@ import React from 'react';
 import * as S from './Password.styled';
 import { InputContent } from '../@Content';
 import { theme } from '@themes/theme';
-import { InputProps } from '@interfaces/input.interface';
+import { InputProps } from '@interfaces/Input.interface';
 import { renderIcon } from '@layouts/renderIcon';
 import { useToggle } from '@hooks/useToggle';
 
