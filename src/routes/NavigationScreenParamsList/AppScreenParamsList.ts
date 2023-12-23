@@ -1,6 +1,10 @@
+import { DetailsProps } from "@interfaces/@AppScreens.interface";
+
 export type AppScreenParamsList = {
-  feed: undefined;
+	details: DetailsProps;
+	feed: undefined;
   home: undefined;
   notification: undefined;
-  profile: undefined;
+	products: undefined;
+	profile: undefined;
 };
