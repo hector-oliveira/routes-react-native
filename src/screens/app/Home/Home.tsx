@@ -1,9 +1,15 @@
 import React from 'react';
 import * as S from './Home.styled';
 import { Button, Input } from '@components/all-components';
+import { useNavigation } from '@react-navigation/native';
+import { AppRootNavigation } from '@navigate/NavigatorStack';
 
 export const Home = () => {
-  return (
+  
+	const navigation = useNavigation<AppRootNavigation>();
+	const goToProducts = () => navigation.navigate('products');
+
+	return (
     <S.Container>
       <S.InputContainer>
         <S.Text>Criando Inputs {'\n'} com Composition</S.Text>
@@ -11,7 +17,7 @@ export const Home = () => {
         <Input.Password placeholder='Senha'/>
       </S.InputContainer>
       <S.ButtonContainer>
-        <Button title='Entrar'/>
+        <Button title='Ir para Produtos' onPress={goToProducts} />
       </S.ButtonContainer>
     </S.Container>
   );
