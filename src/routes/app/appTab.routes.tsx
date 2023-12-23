@@ -4,8 +4,9 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { AppScreenParamsList } from '@params-list/AppScreenParamsList';
 import { theme } from '@themes/theme';
 import { renderIcon } from '@layouts/renderIcon';
+import { AppStackRoutes } from './appStack.routes';
 
-const Tab = createBottomTabNavigator<AppScreenParamsList>();
+const Tab = createBottomTabNavigator();
 
 export function AppTabRoutes() {
   

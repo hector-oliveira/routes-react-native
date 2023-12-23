@@ -1,10 +1,11 @@
 import * as React from 'react';
+import * as screens from '@app/app-screens'
 import { createDrawerNavigator } from '@react-navigation/drawer';
-import { AppStackRoutes } from './appStack.routes';
 import { AppTabRoutes } from './appTab.routes';
-import { Feather } from '@expo/vector-icons';
+import { AppStackRoutes } from './appStack.routes';
 import { theme } from '@themes/theme';
 import { renderIcon } from '@layouts/renderIcon';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 const Drawer = createDrawerNavigator();
 
@@ -42,8 +43,8 @@ export function AppDrawerRoutes() {
       />
       
       <Drawer.Screen
-        name='Feed'
-        component={AppStackRoutes}
+        name='listaDePublicacao'
+        component={screens.Feed}
         options={{
           drawerIcon: ({ size, color }) => icon({ name: 'plus-circle', size, color }),
           drawerLabel: 'Feed'
@@ -51,11 +52,11 @@ export function AppDrawerRoutes() {
       />
       
       <Drawer.Screen
-        name='Profile'
-        component={AppStackRoutes}
+        name='perfil'
+        component={screens.Profile}
         options={{
           drawerIcon: ({ size, color }) => icon({ name: 'user-plus', size, color }),
-          drawerLabel: 'Perfil'
+          drawerLabel: 'Perfil',
         }}
       />
     </Drawer.Navigator>
