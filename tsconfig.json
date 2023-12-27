@@ -12,8 +12,10 @@
       "@components/*": ["./src/components/*"],
       
       /** ROUTES */
-      "@navigate/*": ["./src/routes/RootNavigationParams/*"],
-      "@params-list/*": ["./src/routes/NavigationScreenParamsList/*"],
+      "@root_navigation/*": ["./src/routes/RootNavigationParams/*"],
+      "@params_list/*": ["./src/routes/NavigationScreenParamsList/*"],
+			"@app_route_type/*": ["./src/routes/app/*"],
+			"@auth_route_type/*": ["./src/routes/auth/*"],
       
       /** SCREENS */
       "@app/*": ["./src/screens/app/*"],
