@@ -1,7 +1,7 @@
 import React from 'react';
 import * as S from './Products.styled';
 import { Button } from '@components/all-components';
-import { AppRootNavigation } from '@navigate/NavigatorStack';
+import { AppRootNavigation } from '@root_navigation/NavigatorStack';
 import { useNavigation } from '@react-navigation/native';
 
 export const Products = () => {

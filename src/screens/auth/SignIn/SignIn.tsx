@@ -3,7 +3,7 @@ import * as S from './SignIn.styled';
 import { Button } from '@components/all-components';
 import { theme } from '@themes/theme';
 import { useNavigation } from '@react-navigation/native';
-import { AuthRootNavigation } from '@navigate/NavigatorStack';
+import { AuthRootNavigation } from '@root_navigation/NavigatorStack';
 
 export const SignIn = () => {
   const navigation = useNavigation<AuthRootNavigation>();

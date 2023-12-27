@@ -2,7 +2,7 @@ import React from 'react';
 import * as S from './Home.styled';
 import { Button, Input } from '@components/all-components';
 import { useNavigation } from '@react-navigation/native';
-import { AppRootNavigation } from '@navigate/NavigatorStack';
+import { AppRootNavigation } from '@root_navigation/NavigatorStack';
 
 export const Home = () => {
   

@@ -1,4 +1,4 @@
-import { DetailsProps } from "@interfaces/@AppScreens.interface";
+import { DetailsProps } from "@interfaces/AppScreens.interface";
 
 export type AppScreenParamsList = {
 	details: DetailsProps;

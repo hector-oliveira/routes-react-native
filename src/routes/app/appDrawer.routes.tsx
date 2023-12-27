@@ -2,10 +2,8 @@ import * as React from 'react';
 import * as screens from '@app/app-screens'
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { AppTabRoutes } from './appTab.routes';
-import { AppStackRoutes } from './appStack.routes';
 import { theme } from '@themes/theme';
 import { renderIcon } from '@layouts/renderIcon';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 const Drawer = createDrawerNavigator();
 

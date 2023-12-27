@@ -1,7 +1,7 @@
 import React from 'react';
 import * as S from './Details.styled';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
-import { AppScreenParamsList } from '@params-list/AppScreenParamsList';
+import { AppScreenParamsList } from '@params_list/AppScreenParamsList';
 
 type DetailsScreenRootProps = NativeStackScreenProps<AppScreenParamsList, 'details'>;
 export const Details = ({ route }: DetailsScreenRootProps) => {
